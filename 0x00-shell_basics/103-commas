@@ -1,2 +1,11 @@
 #!/bin/bash
-ls -a1 | LC_COLLATE=C sort -f | paste -sd ',' - | sed 's|[^/],|&,|g' | sed 's|^\([^,]*\),\([^,]*\),|.\1,../,|'
+# List all files and directories including hidden ones
+# Sort by alphanumeric order with directories at the beginning
+# Append a trailing slash to directory names
+# Print result with commas separating the entries
+
+{
+    echo -n './, ../, '
+    ls -a | grep -E '^\.' | sort -t/ -k2,2 -k1,1 | sed 's|[^/]*$|&/|'
+    ls -a | grep -vE '^\.' | sort -t/ -k1,1
+} | paste -sd ',' - | sed 's|/,,|,,|g'
