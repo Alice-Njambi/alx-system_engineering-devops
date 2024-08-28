@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -a1 | LC_COLLATE=C sort -f | paste -sd ',' - | sed 's|[^/],|&,|g' | sed 's|^\([^,]*\),\([^,]*\),|.\1,../,|'
