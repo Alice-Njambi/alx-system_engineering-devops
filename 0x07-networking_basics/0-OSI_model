@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script answers questions about the OSI model.
+
+#Answer for "What is the OSI model?"
+echo "2"
+
+#Answer for "How is the OSI model organized?"
+echo "2"
+
