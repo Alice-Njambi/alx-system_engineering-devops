@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#This script displays answers for task number 1- Types of Networks.
+
+echo "3"
+echo "2"
+echo "1"
+
