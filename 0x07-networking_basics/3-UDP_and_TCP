@@ -1,12 +1,4 @@
-#!/usr/bin/env bash
-#This script contains the answers to the multiple choice questions about TCP and UDP protocols.
-
-#Answer for the TCP box:
-echo "1"
-
-#Answer for the UDP box:
-echo "2"
-
-#Answer for the TCP worker:
-echo "1"
+echo "1" #Answer for the TCP box
+echo "2" #Answer for the UDP box
+echo "1" #Which statement is correct for TCP worker.
 

@@ -1,9 +1,3 @@
-#!/usr/bin/env bash
-# This script contains the answers to the multiple choice questions about MAC and IP addresses.
-
-#What is a MAC address?
 echo "2"
-
-#What is an IP address?
 echo "1"
 
